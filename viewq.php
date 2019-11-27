@@ -71,10 +71,11 @@ input[type=submit], button:hover {
 	   <div class="inner-content">
 		<!-- header-starts -->
 			<div class="header-section">
+			<div class="top_menu">
 						
 							<div class="clearfix"></div>	
 								
-						</div>
+				</div>
 						<!--//menu-right-->
 					<div class="clearfix"></div>
 				</div>

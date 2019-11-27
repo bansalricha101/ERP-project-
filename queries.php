@@ -73,21 +73,20 @@ input[type=submit]:hover {
     
 </head> 
 <body>
-   <div class="page-container">
+<div class="page-container">
    <!--/content-inner-->
 	<div class="left-content">
 	   <div class="inner-content">
 		<!-- header-starts -->
 			<div class="header-section">
-						<!--menu-right-->
-						<div class="top_menu">
-						       
+					
 							<div class="clearfix"></div>	
 							<!--//profile_details-->
 						</div>
 						<!--//menu-right-->
 					<div class="clearfix"></div>
 				</div>
+					<!-- //header-ends -->
 					<!-- //header-ends -->
 <div class="container" style="margin-top: 3%;">
            
