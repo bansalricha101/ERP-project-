@@ -260,7 +260,27 @@ if(isset($_POST['upmarks'])){
                     } 
                 }
                 
+        // response query
+
+        if(isset($_POST['sendqresponse'])){
+    
+            $id = $_POST['id'];
+           
+            $msg = $_POST['msg'];
         
+           
+            
+                $qry = "INSERT INTO queryresponse (id,msg)values('$id', '$msg')";
+                $result = mysqli_query($conn, $qry);
+                if($result){
+                $msg1 =  "Response are successfully uploaded";
+                header('location:queries.php?msg='.$msg1);
+                }else{
+                $msg1 =  "error";
+                header('location:queries.php?msg='.$msg1);
+                } 
+               
+            }
 
 ?>
 

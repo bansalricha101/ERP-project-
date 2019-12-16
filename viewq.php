@@ -87,7 +87,7 @@ input[type=submit], button:hover {
      <h3 align="center" style="background:linear-gradient(to right, #42a5f5, #86c9ff); padding-top:15px; padding-bottom:15px; color:white;">Qurey Status</h3><hr/><br>
 <table width="90%" align="center" cellpadding="4" cellspacing="0" class="zebra zebra2">
  <tr>
-
+<th>Id</th>
 <th>Subject</th>
 <th>Message</th>
 <th>Student Name</th>
@@ -102,10 +102,11 @@ $sql = "select * from query";
        if ($result->num_rows > 0) { // if one or more rows are returned do following
             while($ro = $result->fetch_assoc()){    
                 // puts data from database into array, while it's valid it does the loop
-                echo "<tr><td>".$ro["sub"]."</td><td>".$ro["msg"]."</td><td>".$ro["uname"]."</td><td style='color:green;'><b>".$ro["status"]."</b></td>";
-                echo '<td><button><a href=\'controller.php?deleteground='.$ro["id"].' \'onclick=\'return confirm()\'>Delete</a></button></td>' ;
-                echo '<td><a href=\'update.php?updateground='.$ro["id"].'\' onclick=\'return confirm() style=\'color:white; text-decoration:none;\'><button>Update</button></td>';
-      
+                echo "<tr><td>".$ro["id"]."</td><td>".$ro["sub"]."</td><td>".$ro["msg"]."</td><td>".$ro["uname"]."</td><td style='color:green;'><b>".$ro["status"]."</b></td>";
+				echo '<td><button><a href=\'controller.php?deleteground='.$ro["id"].' \'onclick=\'return confirm()\'>Delete</a></button></td>' ;
+								
+                echo '<td><button><a href=\'update.php?updateground='.$ro["id"].'\' onclick=\'return confirm() style=\'color:white; text-decoration:none;\'>Update</button></td>';
+				
                 echo "</tr>";
             }
         }
@@ -159,7 +160,8 @@ $sql = "select * from query";
                     </div>
 							  <div class="clearfix"></div>	
 							<script>
-							var toggle = true;
+
+						var toggle = true;
 										
 							$(".sidebar-icon").click(function() {                
 							  if (toggle)
@@ -177,6 +179,8 @@ $sql = "select * from query";
 											toggle = !toggle;
 										});
 							</script>
+
+
 <!--js -->
 <link rel="stylesheet" href="css/vroom.css">
 <script type="text/javascript" src="js/vroom.js"></script>

@@ -111,28 +111,7 @@ $(document).ready(function(){
 	   <div class="inner-content">
 		<!-- header-starts -->
 			<div class="header-section">
-						<!--menu-right-->
-						<!-- <div class="top_menu">
-						        <div class="main-search">
-											<form>
-											   <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text"/>
-												<input type="submit" value="">
-											</form>
-									<div class="close"><img src="images/cross.png" /></div>
-								</div> -->
-									<!-- <div class="srch"><button></button></div>
-									<script type="text/javascript">
-										 $('.main-search').hide();
-										$('button').click(function (){
-											$('.main-search').show();
-											$('.main-search text').focus();
-										}
-										);
-										$('.close').click(function(){
-											$('.main-search').hide();
-										});
-									</script> -->
-							<!--/profile_details-->
+						
 								<div class="profile_details_left">
 									<ul class="nofitications-dropdown">
 									       <li class="dropdown note">
@@ -149,13 +128,11 @@ $(document).ready(function(){
 					<!-- //header-ends -->
         
      <div class="container-fluid content bg" >
-            
-			
-
+        
 			    
      </div>
 										<footer>
-										   <p>&copy 2019 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+										   <p>ERP  International Institute of Professional Studies,DAVV</p>
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -175,20 +152,19 @@ $(document).ready(function(){
 									  <a href="profile.php"><span class=" name-caret"><?php echo $row123['name']; ?></span></a>
 									<ul>
 									<li><a class="tooltips" href="sprofile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="supdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
+										
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                                <li><a href="staff.html" class="active"><i class="fa fa-tachometer"></i><span>Attendance</span></a></li>
 								<li><a href="addmark.php"><i class="fa fa-table"></i><span>Add Marks</span></a></li>
 								<li><a href="upassig.php"><i class="fa fa-file-text-o"></i> <span>Upload Assignment</span> </a></li>
 								<li><a href="upnotes.php"><i class="lnr lnr-pencil"></i> <span>Share Document/Notes</span></a></li>
 								<li><a href="addnews.php"><i class="lnr lnr-book"></i> <span>Add News</span> </a></li>
                                 <li><a href="viewq.php"><i class="lnr lnr-envelope"></i> <span>View Queries</span></a></li>
-                                <li><a  href="sprofile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                                <li><a  href="sprofile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>

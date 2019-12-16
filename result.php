@@ -89,6 +89,7 @@ input[type=submit], button:hover {
 <table width="90%" align="center" cellpadding="4" cellspacing="0" class="zebra zebra2">
  <tr>
 
+<th>Id</th>
 <th>Subject</th>
 <th>Semester</th>
 <th>Course</th>
@@ -106,7 +107,7 @@ $sql = "select * from marks ";
        if ($result->num_rows > 0) { // if one or more rows are returned do following
             while($ro = $result->fetch_assoc()){    
                 // puts data from database into array, while it's valid it does the loop
-                echo "<tr><td>".$ro["subject_name"]."</td><td>".$ro["sem"]."</td><td>".$ro["course"]."</td>";
+                echo "<tr><td>".$ro["ID"]."</td><td>".$ro["subject_name"]."</td><td>".$ro["sem"]."</td><td>".$ro["course"]."</td>";
 				echo '<td><a href='.$ro["docs"].' download='.$ro["docs"].'><button>Download</button></a></td>';
                 echo "</tr>";
             }

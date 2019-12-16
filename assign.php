@@ -116,8 +116,9 @@ $sql = "select * from uassignment";
             while($ro = $result->fetch_assoc()){    
                 // puts data from database into array, while it's valid it does the loop
                 echo "<tr><td>".$ro["subject_name"]."</td><td>".$ro["course"]."</td><td>".$ro["sem"]."</td><td>".$ro["num"]."</td><td>".$ro["assignment_date"]."</td>";
-                echo '<td><a href='.$ro["docs"].' download='.$ro["docs"].'><button>Download</button></a></td>';
-                echo "</tr>";
+				echo '<td><a href='.$ro["docs"].' download='.$ro["docs"].'><button>Download</button></a></td>';
+				echo "</tr>";
+				
 			}
 		        }
     ?>

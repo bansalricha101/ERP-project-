@@ -7,16 +7,15 @@ if($_SESSION['uname']=="")
   exit(0);
 }
 $adi= $_SESSION['uname'];
-$sql = "select * from tec_reg where username = '$adi' ";
+error_reporting(0);
+$sql = "select * from reg where username = '$adi' ";
 $result = mysqli_query($conn, $sql);
-$row123 = mysqli_fetch_array($result);
+$rows = mysqli_fetch_array($result);
 ?>
-
-
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>User Panel</title>
+<title>ERP SYSTEM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -25,29 +24,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!-- Graph CSS -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<link href="css/w3.css" rel="stylesheet"> 
 <!-- jQuery -->
 <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
 <!-- lined-icons -->
 <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!-- //lined-icons -->
 <script src="js/jquery-1.10.2.min.js"></script>
-<link href="css/barChart.css" rel='stylesheet' type='text/css' />
-<link href="css/fabochart.css" rel='stylesheet' type='text/css' />
-<!--clock init-->
-<script src="js/css3clock.js"></script>
-<!--Easy Pie Chart-->
-<!--skycons-icons-->
-<script src="js/skycons.js"></script>
-
 <script src="js/jquery.easydropdown.js"></script>
 
 <!--//skycons-icons-->
-<style> 
+    
+    <style>
 input[type=text], select, textarea, input[type=file] {
   width: 100%;
   padding: 12px;
@@ -70,19 +61,25 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background:linear-gradient(to right, #42a5f5, #86c9ff);
-}</style> 
+}
+
+.container {
+  width:50%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+</style>
     
 </head> 
 <body>
-   <div class="page-container">
+<div class="page-container">
    <!--/content-inner-->
 	<div class="left-content">
 	   <div class="inner-content">
 		<!-- header-starts -->
 			<div class="header-section">
-						<!--menu-right-->
-						<div class="top_menu">
-						      
+					
 							<div class="clearfix"></div>	
 							<!--//profile_details-->
 						</div>
@@ -90,51 +87,29 @@ input[type=submit]:hover {
 					<div class="clearfix"></div>
 				</div>
 					<!-- //header-ends -->
-        
- <div class="container" style="margin-top: 3%;">
-           <div class="row">
-               <h3 align="center" style="background:linear-gradient(to right, #42a5f5, #86c9ff); padding-top:20px; padding-bottom:20px; color:white;">Add Marks </h3><hr/><br>
-           <div class="col-lg-6"  style="margin-left: 20%;">
+					<!-- //header-ends -->
+            <div class="container" style="margin-top: 3%;">
+            <div id="div1" class="targetDiv">
+       <h3 align="center" style="background:linear-gradient(to right, #42a5f5, #86c9ff); padding-top:20px; padding-bottom:20px; color:white;">Response Query</h3><hr/><br>
+       <?php error_reporting(0);
+        if($_GET['msg']){ 
+	    "<h3 style='color:green'>".$_GET['msg']."</h3>";
+}
+		?>
+        </div>
 
-		   <form method="post" action="controller.php" align="left" enctype="multipart/form-data">
+            <form method="post" action="controller.php" align="left" enctype="multipart/form-data" validate>
+            <label for="lname">Message</label>
+      <textarea type="text" name="msg" style="height:100px;" multiple placeholder="Write message for query" required></textarea><br>
+	  <input type="hidden" name="uname" value="<?php echo $adi;?>" required>
       
-	  <label for="fname">Subject Name</label>
-	  <input type="text" id="fname" name="sub" placeholder="Enter subject .." required>
-		
-	   <label for="fname">Course</label>
-	  <select name = "course" id="pwd" required>
-		  <option value="select"> Select Course</option>
-		  <option value="M.TECH">M.TECH (INTEGRATED)</option>
-		  <option value="MCA">MCA</option>
-		  </select>
-		
-	   <label for="fname">Semester</label>
-	   <select  name = "sem" id="sem" required>
-		  <option value="select"> Select Semester</option>
-		  <option value="1">1</option>
-		  <option value="2">2</option>
-		  <option value="3">3</option>
-		  <option value="4">4</option>
-		  <option value="5">5</option>
-		  <option value="6">6</option>
-		  <option value="7">7</option>
-		  <option value="8">8</option>
-		  </select>
-  
-	  <label for="lname">Upload Marks List</label>
-	  <input type="file" name="pdf" multiple placeholder="select the file">
-		
-		<input type="hidden" name="uname" value="<?php echo $adi;?>">
-	  <input type="submit" value="Submit" name="upmarks">
-	</form><br>
-       <br>
-            <br><br><br>
-</div>
-        </div>   
-      </div>
-  </div>
-           				<footer>
-										   <p>ERP  International Institute of Professional Studies,DAVV</p>
+    <input type="submit" value="Submit" name="sendqresponse">
+           
+               </div>
+           
+           
+										<footer>
+										   <p>&copy 2018 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -150,24 +125,25 @@ input[type=submit]:hover {
 			<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
 			<!--/down-->
 							<div class="down" style="height: 230px;">	
-									  <a href="admin.php"><img src="<?php echo $row123['image']; ?>" height="100" width="100"></a>
-									  <a href="profile.php"><span class=" name-caret"><?php echo $row123['name']; ?></span></a>
+									  <a href="admin.php"><img src="<?php echo $rows['image']; ?>" height="100" width="100"></a>
+									  <a href="profile.php"><span class=" name-caret"><?php echo $rows['name']; ?></span></a>
 									<ul>
-									<li><a class="tooltips" href="sprofile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										
+									<li><a class="tooltips" href="profile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
+										<li><a class="tooltips" href="adminupdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                              
-								<li><a href="addmark.php"><i class="fa fa-table"></i><span>Add Marks</span></a></li>
-								<li><a href="upassig.php"><i class="fa fa-file-text-o"></i> <span>Upload Assignment</span> </a></li>
-								<li><a href="upnotes.php"><i class="lnr lnr-pencil"></i> <span>Share Document/Notes</span></a></li>
-								<li><a href="addnews.php"><i class="lnr lnr-book"></i> <span>Add News</span> </a></li>
-                                <li><a href="viewq.php"><i class="lnr lnr-envelope"></i> <span>View Queries</span></a></li>
-                                <li><a  href="sprofile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
+                                <li><a href="user123.php" class="active"><i class="fa fa-tachometer"></i><span>News Feed</span></a></li>
+								<li><a href="attedence.php"><i class="fa fa-table"></i><span> View Attendence</span></a></li>
+								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Result</span> </a></li>
+								<li><a href="assign.php"><i class="lnr lnr-pencil"></i> <span>View Assignment</span></a></li>
+								<li><a href="document.php"><i class="lnr lnr-book"></i> <span>View Document</span> </a></li>
+                                <li><a href="queries.php"><i class="lnr lnr-envelope"></i> <span>Send Queries</span></a></li>
+								<li><a  href="status.php"><i class="lnr lnr-envelope"></i> <span>Query Status</span></a></li>
+                                <li><a  href="profile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>
