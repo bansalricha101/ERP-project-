@@ -14,7 +14,7 @@ $rows = mysqli_fetch_array($result);
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>User Panel</title>
+<title>Student Panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -107,51 +107,15 @@ $(document).ready(function(){
            
            <div class="row">
                 <h3 align="center" style="background:linear-gradient(to right, #42a5f5, #86c9ff); padding-top:20px; padding-bottom:20px; color:white;">NewsFeed</h3><hr/><br>
-				<div class="col-lg-12 right-abw3ls mt-lg-0 mt-sm-5 mt-4">
-				<img src="tt.jpg" alt="Avatar" height="550" width="550" class="w3-left w3-circle w3-margin-right">
+				<div class="col-lg-12 right-abw3ls mt-lg-0 mt-sm-6 mt-6">
+        <a href="news/tt.png">	<img src="news/tt.png" alt="Avatar" height="250" width="350" class="w3-left w3-margin-right w3-margin-left"></a>
 				<hr class="w3-clear">
-        <p align="justify">As per the news, its all set for the final match between KIIT university V/S Patna university. Both the teams are full of energy and full of experience player like as their captains and all-rounder.
+        <p align="justify">External Exams Time Table 2019-2020 .
 
  </p>
    </div>
  </div>
-                <br/>
-                <br/>
-                <div class="row">
-				<div class="col-lg-12 right-abw3ls mt-lg-0 mt-sm-5 mt-4 container">
-               <div class="w3-row">
-   <div class="w3-col m12" >
-    <div class="w3-container w3-card w3-white w3-round w3-margin" style="height:auto;"><br>
-        <img src="tt.jpg" alt="Avatar" height="550" width="550" class="w3-left w3-circle w3-margin-right">
-        <span class="w3-right w3-opacity">1 min</span>
-        <h5 style="color:#003d66">Everything is ready for the final match of east zone unversity tournament</h5><br>
-        <hr class="w3-clear">
-        <p align="justify">As per the news, its all set for the final match between KIIT university V/S Patna university. Both the teams are full of energy and full of experience player like as their captains and all-rounder.
-
- </p>
-          <div class="w3-row-padding" style="margin:0 -16px; height:50%; width:100%">
-            <div class="w3-half">
-              <img src="kiit.png" style="width:30%; height:30%;" alt="Northern Lights" class="w3-margin-bottom">
-            </div>
-            <div class="w3-half">
-              <img src="patna.jpg" style="width:30%; height:30%;" alt="Nature" class="w3-margin-bottom">
-          </div>
-        </div><hr>
-		<p class="w3-left">ADMIN</p>
-        <button type="button" data-toggle="modal" data-target="#myModal" class="w3-button w3-margin-bottom" style="float:right;"><i class="fa fa-comment"></i> Message</button> 
-      </div>
-    </div>
-    </div>
-	</div>
-            </div>
-                    <br/>
-                    <br/>
-            <div class="row">
-				<div class="col-lg-12 right-abw3ls mt-lg-0 mt-sm-5 mt-4 container">
-                    <div class="w3-row">
-
-           <br>
-       <br>
+                
        <br>
         <div class="modal fade container-fluid" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -191,7 +155,9 @@ $(document).ready(function(){
 	</div>
                </div>
 										<footer>
-										   <p>&copy 2018 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+										  
+										<p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
+									
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -200,7 +166,7 @@ $(document).ready(function(){
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="user.php"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, ;">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
@@ -211,21 +177,20 @@ $(document).ready(function(){
 									  <a href="profile.php"><span class=" name-caret"><?php echo $rows['name']; ?></span></a>
 									<ul>
 									<li><a class="tooltips" href="profile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="adminupdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
+								
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                                <li><a href="user.php" class="active"><i class="fa fa-tachometer"></i><span>News Feed</span></a></li>
-								<li><a href="attedence.php"><i class="fa fa-table"></i><span> View Attendence</span></a></li>
-								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Result</span> </a></li>
+                                
+								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Marks/Result</span> </a></li>
 								<li><a href="assign.php"><i class="lnr lnr-pencil"></i> <span>View Assignment</span></a></li>
 								<li><a href="document.php"><i class="lnr lnr-book"></i> <span>View Document</span> </a></li>
-                                <li><a href="queries.php"><i class="lnr lnr-envelope"></i> <span>Send Queries</span></a></li>
+                 <li><a href="queries.php"><i class="lnr lnr-envelope"></i> <span>Send Queries</span></a></li>
 								<li><a  href="status.php"><i class="lnr lnr-envelope"></i> <span>Query Status</span></a></li>
-                                <li><a  href="profile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                 <li><a  href="profile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>
@@ -233,21 +198,21 @@ $(document).ready(function(){
 							<script>
 							var toggle = true;
 										
-							$(".sidebar-icon").click(function() {                
-							  if (toggle)
-							  {
-								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-								$("#menu span").css({"position":"absolute"});
-							  }
-							  else
-							  {
-								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-								setTimeout(function() {
-								  $("#menu span").css({"position":"relative"});
-								}, 400);
-							  }
-											toggle = !toggle;
-										});
+                    $(".sidebar-icon").click(function() {                
+                      if (toggle)
+                      {
+                      $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                      $("#menu span").css({"position":"absolute"});
+                      }
+                      else
+                      {
+                      $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                      setTimeout(function() {
+                        $("#menu span").css({"position":"relative"});
+                      }, 400);
+                      }
+                            toggle = !toggle;
+                          });
 							</script>
 <!--js -->
 <link rel="stylesheet" href="css/vroom.css">

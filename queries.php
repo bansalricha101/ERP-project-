@@ -15,7 +15,7 @@ $rows = mysqli_fetch_array($result);
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>ERP SYSTEM</title>
+<title>Student Panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -72,14 +72,22 @@ input[type=submit]:hover {
 </style>
     
 </head> 
-<body>
-<div class="page-container">
+<body bgcolor="grey">
+   <div class="page-container">
    <!--/content-inner-->
 	<div class="left-content">
 	   <div class="inner-content">
 		<!-- header-starts -->
 			<div class="header-section">
-					
+						<!--menu-right-->
+						<div class="top_menu">
+						        									
+							<!--/profile_details-->
+								<div class="profile_details_left">
+									
+							<div class="clearfix"></div>	
+								</ul>
+							</div>
 							<div class="clearfix"></div>	
 							<!--//profile_details-->
 						</div>
@@ -87,13 +95,13 @@ input[type=submit]:hover {
 					<div class="clearfix"></div>
 				</div>
 					<!-- //header-ends -->
-					<!-- //header-ends -->
-<div class="container" style="margin-top: 3%;">
-           
-           <div class="cols-lg-12">
-      
-   <div id="div1" class="targetDiv">
-       <h3 align="center" style="background:linear-gradient(to right, #42a5f5, #86c9ff); padding-top:20px; padding-bottom:20px; color:white;">Send Query</h3><hr/><br>
+        
+<div class="container" style="margin-top: 1%;">
+ <div class="row ">
+<div class="col-lg-16 mt-lg-0 mt-sm-5 mt-4">
+     <h3 align="center" style="background:linear-gradient(to right, #42a5f5, #86c9ff); padding-top:20px; padding-bottom:20px; color:white;">View Notes/Document</h3><hr/><br>
+
+
        <?php error_reporting(0);
         if($_GET['msg']){ 
 	    "<h3 style='color:green'>".$_GET['msg']."</h3>";
@@ -131,7 +139,9 @@ input[type=submit]:hover {
            
            
 										<footer>
-										   <p>&copy 2018 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+										  
+										<p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
+									
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -140,7 +150,7 @@ input[type=submit]:hover {
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="user.php"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, ">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
@@ -151,21 +161,20 @@ input[type=submit]:hover {
 									  <a href="profile.php"><span class=" name-caret"><?php echo $rows['name']; ?></span></a>
 									<ul>
 									<li><a class="tooltips" href="profile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="adminupdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
+										
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                                <li><a href="user123.php" class="active"><i class="fa fa-tachometer"></i><span>News Feed</span></a></li>
-								<li><a href="attedence.php"><i class="fa fa-table"></i><span> View Attendence</span></a></li>
+                       
 								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Result</span> </a></li>
 								<li><a href="assign.php"><i class="lnr lnr-pencil"></i> <span>View Assignment</span></a></li>
 								<li><a href="document.php"><i class="lnr lnr-book"></i> <span>View Document</span> </a></li>
                                 <li><a href="queries.php"><i class="lnr lnr-envelope"></i> <span>Send Queries</span></a></li>
 								<li><a  href="status.php"><i class="lnr lnr-envelope"></i> <span>Query Status</span></a></li>
-                                <li><a  href="profile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                                <li><a  href="profile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>

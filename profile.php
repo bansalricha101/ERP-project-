@@ -35,13 +35,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //js-->
 </head> 
 <body>
+<div class="page-container">
+   <!--/content-inner-->
+	<div class="left-content">
+	   <div class="inner-content">
+		<!-- header-starts -->
+			<div class="header-section">
+						<!--menu-right-->
+						<div class="top_menu">
+						       
+						<div class="container" style="margin-top: 1%;">
+           <div class="row">
+              <h2  align="center" style=" padding-top:10px; padding-bottom:10px; color:white;"> View Profile</h2>
+						</div>
+						</div>		
+						</div>
+						<!--//menu-right-->
+					<div class="clearfix"></div>
+				</div>
    
 						<!--outter-wp-->
 							<div class="outter-wp">
 									<!--sub-heard-part-->
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
-											<li><a href="admin.php">Home</a></li>
+											<li><a href="user.php">Home</a></li>
 											<li class="active">Profile</li>
 										</ol>
 									   </div>
@@ -96,8 +114,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																				   <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
 																				</div>
 																				<div class="timeline-body">
-																				 <p class="time">5 Minutes ago</p>
-																				  <p>Uploaded 2 new Photos <i class="fa fa-picture-o"></i></p>
+																			
+																				  <p>Uploaded  <i class="fa fa-picture-o"></i></p>
 																				</div>
 																			  </div>
 																			</li>
@@ -108,36 +126,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																				   <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
 																				</div>
 																				<div class="timeline-body">
-																				   <p class="time">2 Minutes ago</p>
-																				  <p>Uploaded 2 new Photos <i class="fa fa-picture-o"></i></p>
+																				   
+																				  <p>Uploaded  <i class="fa fa-picture-o"></i></p>
 																				</div>
 																			  </div>
 																			</li>
 																			<li>
-																			  <div class="timeline-badge danger"><i class="fa fa-times-circle-o"></i></div>
-																			  <div class="timeline-panel">
-																				<div class="timeline-heading">
-																				   <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
-																				</div>
-																				<div class="timeline-body">
-																				   <p class="time">10 Minutes ago</p>
-																				  <p>Uploaded 5 new Photos <i class="fa fa-picture-o"></i></p>
-																				</div>
-																			  </div>
-																			</li>
-																			
-																			<li>
-																			  <div class="timeline-badge success"><i class="fa fa-check-circle-o"></i></div>
-																			  <div class="timeline-panel">
-																				<div class="timeline-heading">
-																				  <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
-																				</div>
-																				<div class="timeline-body">
-																				   <p class="time">15 Minutes ago</p>
-																				  <p>Uploaded 2 new Photos <i class="fa fa-picture-o"></i></p>
-																				</div>
-																			  </div>
-																			</li>
+																			 
 																		</ul>
 																		<div class="clearfix"></div>		
 																	</div>
@@ -154,7 +149,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										
 									 <!--footer section start-->
 														<footer>
-										   <p>&copy 2018 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+										
+														<p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
+									
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -163,7 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, ">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
@@ -174,21 +171,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <a href="profile.php"><span class=" name-caret"><?php echo $row123['name']; ?></span></a>
 									<ul>
 									<li><a class="tooltips" href="profile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="adminupdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
+									
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                                <li><a href="user.php" class="active"><i class="fa fa-tachometer"></i><span>News Feed</span></a></li>
-								<li><a href="attedence.php"><i class="fa fa-table"></i><span> View Attendence</span></a></li>
+                                
 								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Result</span> </a></li>
 								<li><a href="assign.php"><i class="lnr lnr-pencil"></i> <span>View Assignment</span></a></li>
 								<li><a href="document.php"><i class="lnr lnr-book"></i> <span>View Document</span> </a></li>
                                 <li><a href="queries.php"><i class="lnr lnr-envelope"></i> <span>Send Queries</span></a></li>
 								<li><a  href="status.php"><i class="lnr lnr-envelope"></i> <span>Query Status</span></a></li>
-                                <li><a  href="profile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                                <li><a  href="profile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>

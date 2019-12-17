@@ -14,7 +14,7 @@ $rows = mysqli_fetch_array($result);
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Sport's Club</title>
+<title>Student Panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -123,7 +123,9 @@ $sql = "select * from marks ";
                </div>	
     <footer>
 										  								<footer>
-										   <p>&copy 2018 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+										  
+										<p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
+									
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -132,32 +134,31 @@ $sql = "select * from marks ";
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="user.php"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT,">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
 			<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
 			<!--/down-->
 							<div class="down" style="height: 230px;">	
-									  <a href="admin.php"><img src="<?php echo $rows['image']; ?>" height="100" width="100"></a>
+									  <a href=""><img src="<?php echo $rows['image']; ?>" height="100" width="100"></a>
 									  <a href="profile.php"><span class=" name-caret"><?php echo $rows['name']; ?></span></a>
 									<ul>
 									<li><a class="tooltips" href="profile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="adminupdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
+										
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                                <li><a href="user.php" class="active"><i class="fa fa-tachometer"></i><span>News Feed</span></a></li>
-								<li><a href="attedence.php"><i class="fa fa-table"></i><span> View Attendence</span></a></li>
-								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Result</span> </a></li>
+                               
+								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Marks/Result</span> </a></li>
 								<li><a href="assign.php"><i class="lnr lnr-pencil"></i> <span>View Assignment</span></a></li>
 								<li><a href="document.php"><i class="lnr lnr-book"></i> <span>View Document</span> </a></li>
                                 <li><a href="queries.php"><i class="lnr lnr-envelope"></i> <span>Send Queries</span></a></li>
 								<li><a  href="status.php"><i class="lnr lnr-envelope"></i> <span>Query Status</span></a></li>
-                                <li><a  href="profile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                                <li><a  href="profile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>

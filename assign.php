@@ -14,7 +14,7 @@ $rows = mysqli_fetch_array($result);
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Sport's Club</title>
+<title>Student panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -132,7 +132,9 @@ $sql = "select * from uassignment";
                </div>	
     <footer>
 										  								<footer>
-										   <p>&copy 2019 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+										
+																		  <p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
+									
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -141,7 +143,7 @@ $sql = "select * from uassignment";
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="user.php"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT,">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
@@ -159,14 +161,13 @@ $sql = "select * from uassignment";
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                                <li><a href="user.php" class="active"><i class="fa fa-tachometer"></i><span>News Feed</span></a></li>
-								<li><a href="attedence.php"><i class="fa fa-table"></i><span> View Attendence</span></a></li>
+                              
 								<li><a href="result.php"><i class="fa fa-file-text-o"></i> <span>Result</span> </a></li>
 								<li><a href="assign.php"><i class="lnr lnr-pencil"></i> <span>View Assignment</span></a></li>
 								<li><a href="document.php"><i class="lnr lnr-book"></i> <span>View Document</span> </a></li>
                                 <li><a href="queries.php"><i class="lnr lnr-envelope"></i> <span>Send Queries</span></a></li>
 								<li><a  href="status.php"><i class="lnr lnr-envelope"></i> <span>Query Status</span></a></li>
-                                <li><a  href="profile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                                <li><a  href="profile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>
