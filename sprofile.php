@@ -43,167 +43,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-section">
 						<!--menu-right-->
 						<div class="top_menu">
-						        <div class="main-search">
-											<form>
-											   <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text"/>
-												<input type="submit" value=""/>
-											</form>
-									<div class="close"><img src="images/cross.png" /></div>
-								</div>
-									<div class="srch"><button></button></div>
-									<script type="text/javascript">
-										 $('.main-search').hide();
-										$('button').click(function (){
-											$('.main-search').show();
-											$('.main-search text').focus();
-										}
-										);
-										$('.close').click(function(){
-											$('.main-search').hide();
-										});
-									</script>
-							<!--/profile_details-->
-								<div class="profile_details_left">
-									<ul class="nofitications-dropdown">
-										<li class="dropdown note">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope-o"></i> <span class="badge">3</span></a>
-
-												
-													<ul class="dropdown-menu two first">
-														<li>
-															<div class="notification_header">
-																<h3>You have 3 new messages  </h3> 
-															</div>
-														</li>
-														<li><a href="#">
-														   <div class="user_img"><img src="images/1.jpg" alt=""></div>
-														   <div class="notification_desc">
-															<p>Lorem ipsum dolor sit amet</p>
-															<p><span>1 hour ago</span></p>
-															</div>
-														   <div class="clearfix"></div>	
-														 </a></li>
-														 <li class="odd"><a href="#">
-															<div class="user_img"><img src="images/in.jpg" alt=""></div>
-														   <div class="notification_desc">
-															<p>Lorem ipsum dolor sit amet </p>
-															<p><span>1 hour ago</span></p>
-															</div>
-														  <div class="clearfix"></div>	
-														 </a></li>
-														<li><a href="#">
-														   <div class="user_img"><img src="images/in1.jpg" alt=""></div>
-														   <div class="notification_desc">
-															<p>Lorem ipsum dolor sit amet </p>
-															<p><span>1 hour ago</span></p>
-															</div>
-														   <div class="clearfix"></div>	
-														</a></li>
-														<li>
-															<div class="notification_bottom">
-																<a href="#">See all messages</a>
-															</div> 
-														</li>
-													</ul>
-										</li>
-										
-							<li class="dropdown note">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell-o"></i> <span class="badge">5</span></a>
-
-									<ul class="dropdown-menu two">
-										<li>
-											<div class="notification_header">
-												<h3>You have 5 new notification</h3>
-											</div>
-										</li>
-										<li><a href="#">
-											<div class="user_img"><img src="images/in.jpg" alt=""></div>
-										   <div class="notification_desc">
-											<p>Lorem ipsum dolor sit amet</p>
-											<p><span>1 hour ago</span></p>
-											</div>
-										  <div class="clearfix"></div>	
-										 </a></li>
-										 <li class="odd"><a href="#">
-											<div class="user_img"><img src="images/in5.jpg" alt=""></div>
-										   <div class="notification_desc">
-											<p>Lorem ipsum dolor sit amet </p>
-											<p><span>1 hour ago</span></p>
-											</div>
-										   <div class="clearfix"></div>	
-										 </a></li>
-										 <li><a href="#">
-											<div class="user_img"><img src="images/in8.jpg" alt=""></div>
-										   <div class="notification_desc">
-											<p>Lorem ipsum dolor sit amet </p>
-											<p><span>1 hour ago</span></p>
-											</div>
-										   <div class="clearfix"></div>	
-										 </a></li>
-										 <li>
-											<div class="notification_bottom">
-												<a href="#">See all notification</a>
-											</div> 
-										</li>
-									</ul>
-							</li>	
-						<li class="dropdown note">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks"></i> <span class="badge blue1">9</span></a>
-										<ul class="dropdown-menu two">
-										<li>
-											<div class="notification_header">
-												<h3>You have 9 pending task</h3>
-											</div>
-										</li>
-										<li><a href="#">
-												<div class="task-info">
-												<span class="task-desc">Database update</span><span class="percentage">40%</span>
-												<div class="clearfix"></div>	
-											   </div>
-												<div class="progress progress-striped active">
-												 <div class="bar yellow" style="width:40%;"></div>
-											</div>
-										</a></li>
-										<li><a href="#">
-											<div class="task-info">
-												<span class="task-desc">Dashboard done</span><span class="percentage">90%</span>
-											   <div class="clearfix"></div>	
-											</div>
-										   
-											<div class="progress progress-striped active">
-												 <div class="bar green" style="width:90%;"></div>
-											</div>
-										</a></li>
-										<li><a href="#">
-											<div class="task-info">
-												<span class="task-desc">Mobile App</span><span class="percentage">33%</span>
-												<div class="clearfix"></div>	
-											</div>
-										   <div class="progress progress-striped active">
-												 <div class="bar red" style="width: 33%;"></div>
-											</div>
-										</a></li>
-										<li><a href="#">
-											<div class="task-info">
-												<span class="task-desc">Issues fixed</span><span class="percentage">80%</span>
-											   <div class="clearfix"></div>	
-											</div>
-											<div class="progress progress-striped active">
-												 <div class="bar  blue" style="width: 80%;"></div>
-											</div>
-										</a></li>
-										<li>
-											<div class="notification_bottom">
-												<a href="#">See all pending task</a>
-											</div> 
-										</li>
-									</ul>
-							</li>		   							   		
-							<div class="clearfix"></div>	
-								</ul>
-							</div>
-							<div class="clearfix"></div>	
-							<!--//profile_details-->
+						       
+						<div class="container" style="margin-top: 1%;">
+           <div class="row">
+              <h2  align="center" style=" padding-top:10px; padding-bottom:10px; color:white;"> View Profile</h2>
+						</div>
+						</div>		
 						</div>
 						<!--//menu-right-->
 					<div class="clearfix"></div>
@@ -214,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!--sub-heard-part-->
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
-											<li><a href="admin.php">Home</a></li>
+											<li><a href="staff.php">Home</a></li>
 											<li class="active">Profile</li>
 										</ol>
 									   </div>
@@ -269,8 +114,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																				   <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
 																				</div>
 																				<div class="timeline-body">
-																				 <p class="time">5 Minutes ago</p>
-																				  <p>Uploaded 2 new Photos <i class="fa fa-picture-o"></i></p>
+
+																				  <p>Uploaded  <i class="fa fa-picture-o"></i></p>
 																				</div>
 																			  </div>
 																			</li>
@@ -281,36 +126,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																				   <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
 																				</div>
 																				<div class="timeline-body">
-																				   <p class="time">2 Minutes ago</p>
-																				  <p>Uploaded 2 new Photos <i class="fa fa-picture-o"></i></p>
+																				
+																				  <p>Uploaded <i class="fa fa-picture-o"></i></p>
 																				</div>
 																			  </div>
 																			</li>
 																			<li>
-																			  <div class="timeline-badge danger"><i class="fa fa-times-circle-o"></i></div>
-																			  <div class="timeline-panel">
-																				<div class="timeline-heading">
-																				   <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
-																				</div>
-																				<div class="timeline-body">
-																				   <p class="time">10 Minutes ago</p>
-																				  <p>Uploaded 5 new Photos <i class="fa fa-picture-o"></i></p>
-																				</div>
-																			  </div>
-																			</li>
-																			
-																			<li>
-																			  <div class="timeline-badge success"><i class="fa fa-check-circle-o"></i></div>
-																			  <div class="timeline-panel">
-																				<div class="timeline-heading">
-																				  <h4 class="timeline-title"><a href="profile.html"><?php echo $row123['name']; ?></a></h4>
-																				</div>
-																				<div class="timeline-body">
-																				   <p class="time">15 Minutes ago</p>
-																				  <p>Uploaded 2 new Photos <i class="fa fa-picture-o"></i></p>
-																				</div>
-																			  </div>
-																			</li>
+																			  
 																		</ul>
 																		<div class="clearfix"></div>		
 																	</div>
@@ -327,7 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										
 									 <!--footer section start-->
 														<footer>
-										   <p>&copy 2018 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+										   <p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -347,20 +169,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <a href="profile.php"><span class=" name-caret"><?php echo $row123['name']; ?></span></a>
 									<ul>
 									<li><a class="tooltips" href="profile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="adminupdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
+										
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                             <div class="menu">
 									<ul id="menu" >
-                                <li><a href="staff.php" class="active"><i class="fa fa-tachometer"></i><span>Attendance</span></a></li>
+                                
 								<li><a href="addmark.php"><i class="fa fa-table"></i><span>Add Marks</span></a></li>
 								<li><a href="upassig.php"><i class="fa fa-file-text-o"></i> <span>Upload Assignment</span> </a></li>
 								<li><a href="upnotes.php"><i class="lnr lnr-pencil"></i> <span>Share Document/Notes</span></a></li>
-								<li><a href="addnews.php"><i class="lnr lnr-book"></i> <span>Add News</span> </a></li>
                                 <li><a href="viewq.php"><i class="lnr lnr-envelope"></i> <span>View Queries</span></a></li>
-                                <li><a  href="sprofile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                                <li><a  href="sprofile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>

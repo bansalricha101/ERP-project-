@@ -70,6 +70,21 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background:linear-gradient(to right, #42a5f5, #86c9ff);
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#00004c;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }</style> 
     
 </head> 
@@ -92,6 +107,7 @@ input[type=submit]:hover {
 					<!-- //header-ends -->
         
  <div class="container" style="margin-top: 3%;">
+
            <div class="row">
                <h3 align="center" style="background:linear-gradient(to right, #42a5f5, #86c9ff); padding-top:20px; padding-bottom:20px; color:white;">Add Marks </h3><hr/><br>
            <div class="col-lg-6"  style="margin-left: 20%;">
@@ -127,14 +143,17 @@ input[type=submit]:hover {
 		<input type="hidden" name="uname" value="<?php echo $adi;?>">
 	  <input type="submit" value="Submit" name="upmarks">
 	</form><br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Chat with us</button>
+	
        <br>
             <br><br><br>
 </div>
         </div>   
       </div>
   </div>
+ </div>	
            				<footer>
-										   <p>ERP  International Institute of Professional Studies,DAVV</p>
+						   <p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -143,7 +162,7 @@ input[type=submit]:hover {
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="staff.php"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
@@ -165,31 +184,33 @@ input[type=submit]:hover {
 								<li><a href="addmark.php"><i class="fa fa-table"></i><span>Add Marks</span></a></li>
 								<li><a href="upassig.php"><i class="fa fa-file-text-o"></i> <span>Upload Assignment</span> </a></li>
 								<li><a href="upnotes.php"><i class="lnr lnr-pencil"></i> <span>Share Document/Notes</span></a></li>
-								<li><a href="addnews.php"><i class="lnr lnr-book"></i> <span>Add News</span> </a></li>
                                 <li><a href="viewq.php"><i class="lnr lnr-envelope"></i> <span>View Queries</span></a></li>
                                 <li><a  href="sprofile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>
 							  <div class="clearfix"></div>	
+
 							<script>
-							var toggle = true;
+                                 
+							
+						var toggle = true;
 										
-							$(".sidebar-icon").click(function() {                
-							  if (toggle)
-							  {
-								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-								$("#menu span").css({"position":"absolute"});
-							  }
-							  else
-							  {
-								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-								setTimeout(function() {
-								  $("#menu span").css({"position":"relative"});
-								}, 400);
-							  }
-											toggle = !toggle;
-										});
+										$(".sidebar-icon").click(function() {                
+										  if (toggle)
+										  {
+											$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+											$("#menu span").css({"position":"absolute"});
+										  }
+										  else
+										  {
+											$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+											setTimeout(function() {
+											  $("#menu span").css({"position":"relative"});
+											}, 400);
+										  }
+														toggle = !toggle;
+													});
 							</script>
 <!--js -->
 <link rel="stylesheet" href="css/vroom.css">

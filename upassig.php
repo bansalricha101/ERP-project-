@@ -176,7 +176,7 @@ input[type=submit]:hover {
   </div>
         
 										  								<footer>
-										   <p>&copy 2019 ERP SYSTEM . All Rights Reserved | Design by <a href="index.php" target="_blank">ERP SYSTEM</a></p>
+                                      <p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -185,7 +185,7 @@ input[type=submit]:hover {
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="staff.php"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
@@ -196,26 +196,26 @@ input[type=submit]:hover {
 									  <a href="profile.php"><span class=" name-caret"><?php echo $rows['name']; ?></span></a>
 									<ul>
 									<li><a class="tooltips" href="profile.php"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="adminupdate.php"><span>Update</span><i class="lnr lnr-cog"></i></a></li>
+										
 										<li><a class="tooltips" href="index.php?Expire"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>
 							   <!--//down-->
                            <div class="menu">
 									<ul id="menu" >
-                                <li><a href="staff.html" class="active"><i class="fa fa-tachometer"></i><span>Attendance</span></a></li>
 								<li><a href="addmark.php"><i class="fa fa-table"></i><span>Add Marks</span></a></li>
 								<li><a href="upassig.php"><i class="fa fa-file-text-o"></i> <span>Upload Assignment</span> </a></li>
 								<li><a href="upnotes.php"><i class="lnr lnr-pencil"></i> <span>Share Document/Notes</span></a></li>
-								<li><a href="addnews.php"><i class="lnr lnr-book"></i> <span>Add News</span> </a></li>
+				
                                 <li><a href="viewq.php"><i class="lnr lnr-envelope"></i> <span>View Queries</span></a></li>
-                                <li><a  href="sprofile.php"><i class="lnr lnr-envelope"></i> <span>View Profile</span></a></li>
+                                <li><a  href="sprofile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
                         </div>
                     </div>
 							  <div class="clearfix"></div>	
 							<script>
-							var toggle = true;
+						
+						var toggle = true;
 										
 							$(".sidebar-icon").click(function() {                
 							  if (toggle)

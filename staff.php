@@ -16,6 +16,7 @@ $row123 = mysqli_fetch_array($result);
 <head>
 <title>User Panel</title>
 
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -132,7 +133,7 @@ $(document).ready(function(){
 			    
      </div>
 										<footer>
-										   <p>ERP  International Institute of Professional Studies,DAVV</p>
+										<p> ERP @ All Rights Reserved | Design by <a href="index.php" target="_blank">International Institute Of Professional Studies DAVV</a></p>
 										</footer>
 									<!--footer section end-->
 								</div>
@@ -141,7 +142,7 @@ $(document).ready(function(){
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT, cursive;">ERP SYSTEM</span>
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="staff.php"> <span style="color:white; font-size: 1.6em; font-family: Brush Script MT,;">ERP MODULE</span>
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
@@ -162,7 +163,6 @@ $(document).ready(function(){
 								<li><a href="addmark.php"><i class="fa fa-table"></i><span>Add Marks</span></a></li>
 								<li><a href="upassig.php"><i class="fa fa-file-text-o"></i> <span>Upload Assignment</span> </a></li>
 								<li><a href="upnotes.php"><i class="lnr lnr-pencil"></i> <span>Share Document/Notes</span></a></li>
-								<li><a href="addnews.php"><i class="lnr lnr-book"></i> <span>Add News</span> </a></li>
                                 <li><a href="viewq.php"><i class="lnr lnr-envelope"></i> <span>View Queries</span></a></li>
                                 <li><a  href="sprofile.php"><i class="fa fa-user"></i> <span>View Profile</span></a></li>
 								  </ul>
@@ -170,23 +170,24 @@ $(document).ready(function(){
                     </div>
 							  <div class="clearfix"></div>	
 							<script>
-							var toggle = true;
+							
+						var toggle = true;
 										
-							$(".sidebar-icon").click(function() {                
-							  if (toggle)
-							  {
-								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-								$("#menu span").css({"position":"absolute"});
-							  }
-							  else
-							  {
-								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-								setTimeout(function() {
-								  $("#menu span").css({"position":"relative"});
-								}, 400);
-							  }
-											toggle = !toggle;
-										});
+										$(".sidebar-icon").click(function() {                
+										  if (toggle)
+										  {
+											$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+											$("#menu span").css({"position":"absolute"});
+										  }
+										  else
+										  {
+											$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+											setTimeout(function() {
+											  $("#menu span").css({"position":"relative"});
+											}, 400);
+										  }
+														toggle = !toggle;
+													});
 							</script>
 <!--js -->
 <link rel="stylesheet" href="css/vroom.css">
@@ -198,5 +199,10 @@ $(document).ready(function(){
 
 <!-- Bootstrap Core JavaScript -->
    <script src="js/bootstrap.min.js"></script>
+
+  
+<!-- 
+
+  
 </body>
 </html>
